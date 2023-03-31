@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section,header,footer{
+    width: 100%;
+    height: auto;
+}
+h1{
+  font-weight: 900;
+  font-size: 125px;
+  text-align: center;
+}
+h2{
+    font-weight: 700;
+    font-size: 65px;
+}
+a{
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    text-decoration: none;
+}
+p{
+    
+    color: var(--light-text);
+}
+a:hover{
+    text-decoration: none;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+  }
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 992px !important;}
+
+:root{
+    --w:whitesmoke;
+    --b:black;
+	--primary:#f15931;
+	--secondary:#959595;
+	--text-color:#212529;
+    --light-text:#999999;
+    --footer:#b2b2b2;
+}
+.custom-btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--w);
+    width: 128px;
+    position: relative;
+    background-color: var(--primary);
+    padding: 12px 24px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .5px;
+    z-index: 1;
+}
+
+.custom-btn2 {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--w);
+  width: 128px;
+  position: relative;
+  background-color: var(--light-text);
+  padding: 12px 24px;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+.custom-btn2:hover
+{
+  background-color: var(--primary);
+  text-decoration: none;
+  color: var(--w);
+}
+
+
+
+  #header
+  { 
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/heroImg.png");
+    background-size: cover;
+    position: relative;
+    padding: 0;
+  }
+  #header::before
+  {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+
+
+
+
+
+  /* HERO Start */
+  .hero {
+    padding: 30px 40px;
+}
+  .logo{
+    margin: 39px;
+    position: relative;
+    z-index: 1;
+  }
+  .logo-img
+  {
+    width: 100px;
+    height: auto;
+  }
+  .hero-content
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  .hero-content h2
+  {
+    max-width:750px;
+    color: var(--w);
+    z-index: 1;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+    margin-top: 50px;
+}
+
+  .hero-content p
+  {
+    word-spacing: 3px;
+    max-width:600px;
+    color: var(--w);
+    z-index: 1;
+}
+/* HERO End */
+
+
+
+
+
+
+
+  /* SIDEBAR Start */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #313a3c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: #313a3c;
+    transition: margin-left .5s;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu img{
+    width: 15px;
+    height: auto;
+  }
+  .menu {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .menu p {
+    font-size: 14px;
+    color: var(--w);
+    letter-spacing: 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+
+  .search {
+    position: absolute;
+    bottom: 20px;
+    width: 22px;
+    height: auto;
+}
+/* SIDEBAR End */
+  
+
+
+
+
+
+/* COMPANY Start Here */
+
+#company
+{
+   background-color: #ebebeb;
+   height: 300px;
+   }
+.company{
+    position: relative;
+}
+.company-card
+{
+    width: 100%;
+    background-color: var(--w);
+    display: flex;
+    position: absolute;
+    z-index: 9;
+    top: -50px;
+    padding: 7% 14% 2%;
+    flex-direction: column;
+    justify-content: center;
+}
+.company-span {
+    position: absolute;
+    left: 61px;
+    top: 61px;
+}
+.heading
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.company-card h3
+{
+    font-weight: 800;
+    color:var(--text-color);
+    
+}
+.company-card p
+{
+    margin: 15px 0;
+    word-spacing: 2px;
+}
+.company-card a
+{
+    margin: 15px 0;
+}
+/* COMPANY End Here */
+
+
+/* SERVIES Start Here */
+#service
+{
+  padding: 50px 0;
+}
+.service-card
+{
+display: flex;
+flex-direction: row;
+margin: 50px 0;
+}
+.card-img
+{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.card-img img
+{
+width: 466px;
+height: auto;
+}
+.text
+{
+  margin-left: 20px;
+}
+#reverse .text
+{
+  margin-right: 20px;
+  margin-left: auto;
+}
+.card-body
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading span
+{
+  margin-right:10px ;
+}
+.card-body h3
+{
+    font-weight: 800;
+    color:var(--text-color);
+    
+}
+.card-body p
+{
+    margin: 15px 0;
+    word-spacing: 2px;
+}
+.img-box
+{
+  width: 250px;
+  height: 250px;
+  background-color: var(--primary);
+  z-index: -1;
+  position: absolute;
+    bottom: -25px;
+    left: -20px;
+}
+.card-body a
+{
+    position: absolute;
+    bottom: 0px;
+    left: -8px;
+    
+}
+
+.img-box-reverse
+{
+  width: 250px;
+  height: 250px;
+  background-color: var(--primary);
+  z-index: -1;
+  position: absolute;
+    bottom: -25px;
+    right: -20px;
+}
+#reverse a
+{
+  right: -8px;
+  left: auto;
+}
+
+/* SERVIES End Here */
+
+
+
+
+
+/* ROADMAP Start Here */
+
+#roadmap
+{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#roadmap h1
+{
+  -webkit-text-stroke: 12px;
+  letter-spacing: 10px;
+  line-height: 1;
+  color: var(--light-text);
+  opacity: 0.5;
+}
+#roadmap>img {
+  width: 8%;
+  align-self: center;
+  height: 4px;
+  margin-top: 20px;
+}
+.roadmap {
+  margin: 40px;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rm-card
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+}
+.roadmap img {
+  margin-top: 15px;
+}
+.title {
+  background-image: url(../img/rm-head.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  line-height: 1;
+  height: 58px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title p {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--w);
+  font-size: 11px;
+  font-weight: 700;
+}
+.gray-line {
+  height: 110px;
+  width: 1px;
+  background-color: var(--light-text);
+}
+.step
+{
+  position: relative;
+}
+span.dots {
+  position: absolute;
+  top: 24px;
+  left: 62px;
+}
+/* ROADMAP End Here */
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
