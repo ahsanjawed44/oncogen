@@ -12,7 +12,7 @@ section,header,footer{
 h1{
   font-weight: 900;
   font-size: 125px;
-  text-align: center;
+  text-align: left
 }
 h2{
     font-weight: 700;
@@ -23,6 +23,8 @@ a{
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     text-decoration: none;
+    color: var(--primary);
+    text-transform: uppercase;
 }
 p{
     
@@ -264,6 +266,7 @@ body {
 .heading
 {
     font-size: 12px;
+    margin: 0;
     text-transform: uppercase;
     color: var(--text-color);
     font-weight: 700;
@@ -386,6 +389,7 @@ height: auto;
 #roadmap
 {
   padding: 40px;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,11 +398,12 @@ height: auto;
 
 #roadmap h1
 {
-  -webkit-text-stroke: 12px;
+  -webkit-text-stroke: 11px;
   letter-spacing: 10px;
   line-height: 1;
   color: var(--light-text);
   opacity: 0.5;
+  text-align: center;
 }
 #roadmap>img {
   width: 8%;
@@ -407,9 +412,7 @@ height: auto;
   margin-top: 20px;
 }
 .roadmap {
-  margin: 40px;
   display: flex;
-  margin-bottom: 10px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -458,6 +461,232 @@ span.dots {
   left: 62px;
 }
 /* ROADMAP End Here */
+
+
+
+
+
+
+/* RESEARCH Start Here */
+
+#research
+{ 
+  position: relative;
+  height: 70vh;
+}
+
+#research::before
+{
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/backgroundImg.png);
+  background-size: cover;
+  position: absolute;
+  filter: grayscale();
+}
+
+#research::after 
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.research-body {
+  z-index: 1;
+  position: absolute;
+  padding: 50px 0;
+  margin: 50px 0;
+  max-width: 40%;
+}
+.research-body h3
+{
+  color: var(--w);
+  font-weight: 700;
+  
+}
+
+.research-body p
+{
+  color: var(--w);
+  font-weight: 400;
+  margin: 20px 0 30px
+}
+
+/* RESEARCH End Here */
+
+
+
+/* BROCHURE Start Here */
+.brochure
+{
+  z-index: 1;
+  position: relative;
+}
+
+.brochure-head
+{
+  color: var(--w);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.brochure-head span{
+  margin-right: 10px;
+}
+.brochure-card
+{
+  background-color: var(--w);
+  display: flex;
+}
+
+.orange-body
+{
+  background-color: var(--primary);
+ padding: 0;
+ position: relative;
+}
+.orange-body>img
+{
+width: 100%;
+}
+.orange-body-text
+{
+  margin: 40px;
+  color: var(--w);
+}
+.orange-body-text h3 {
+  padding: 20px 0;
+  font-weight: 900;
+  margin: 0;
+}
+.orange-body-text p
+{
+  color: var(--w);
+}
+.orange-body-text h1 {
+  line-height: .8;
+  text-align: left;
+  opacity: .4;
+  padding: 30px 0;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 23px;
+  left: 46px;
+  display: flex;
+  gap: 6px;
+  
+}
+
+.white-body-text
+{
+  margin:20px 40px;
+  position: relative;
+}
+.body-card
+{
+  padding: 30px 0;
+}
+.white-body-text h3 {
+  padding-bottom: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 10px;
+}
+.brochure-card-line
+{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.brochure-card-line img{
+  position: absolute;
+  width: 30px;
+}
+
+
+/* BROCHURE End Here */
+
+
+
+
+
+/* TWITTER Start Here */
+
+#twitter
+{
+  margin: 40px 0;
+  padding: 40px 0;
+}
+.twitter h1 {
+  font-size: 200px;
+  color: var(--text-color);
+  opacity: 0.2;
+  letter-spacing: 6px;
+  -webkit-text-stroke: 4px;
+}
+.twitter> p{
+  max-width: 80%;
+  padding-bottom: 15px;
+}
+.twitter span
+{
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.twitter-footer
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+}
+.link
+{
+  display: inline-block;
+}
+.link span
+{
+  position: relative;
+}
+.link img {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+}
+.link p {
+  margin: 0;
+  padding-top: 3px;
+}
+.arrowbutton
+{
+  display: inline-block;
+}
+
+.arrow-btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--w);
+  background-color: var(--light-text);
+  padding: 0px 12px;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+.arrow-btn:hover
+{
+  background-color: var(--primary);
+  text-decoration: none;
+  color: var(--w);
+}
+
+/* TWITTER End Here */
 
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
