@@ -198,7 +198,7 @@ body {
     position: absolute;
     z-index: 1;
     top: 0;
-    background-color: #313a3c;
+    background-color: var(--light-gray);
     transition: margin-left .5s;
     padding: 16px;
     display: flex;
