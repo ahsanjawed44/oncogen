@@ -44,6 +44,7 @@ body {
     --b:black;
 	--primary:#f15931;
 	--secondary:#959595;
+  --light-gray:#2c2c2e;
 	--text-color:#212529;
     --light-text:#999999;
     --footer:#b2b2b2;
@@ -164,7 +165,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #313a3c;
+    background-color: var(--light-gray);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -707,7 +708,8 @@ width: 100%;
   padding: 12px;
   flex-direction: column;
   justify-content: center;
-  background-image: radial-gradient(var(--light-text),var(--text-color));
+ background: rgb(87,87,88);
+ background:radial-gradient(circle, rgba(87,87,88,0.9) 15%, rgba(44,44,46,1) 80%);
 }
 .single-frame-card:hover
 {
@@ -740,10 +742,109 @@ padding-top: 30px;
 /* FRAME-CARD End Here */
 
 
+/* LINK-FOOTER Start Here */
+#link-footer
+{
+  background-color: var(--text-color);
+  padding: 20px 0;
+}
+.link-footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.link-footer-content
+{
+  padding-top: 20px;
+}
+.content-head {
+  color: var(--light-text);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.list
+{
+  list-style-type: none;
+}
+.list-link
+{
+  color: var(--light-text);
+  font-size: 11px;
+  text-transform: none;
+}
+.list-link:hover{
+  color: var(--w);
+}
+.subscription
+{
+  margin:30px 0 0 ;
+}
+.content-body p{
+  font-size: 11px;
+}
+.form
+{
+  position: relative;
+}
+input[type="email"]
+{
+  background-color: var(--text-color);
+  color: var(--light-text);
+  font-size: 12px;
+  border: 1px solid var(--primary);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+input[type="button"] {
+  right: 34px;
+  position: absolute;
+  color: var(--w);
+  background-color: var(--primary);
+  padding: 10px 36px;
+  top: 10px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.social
+{
+  display: inline;
+}
+.social-item
+{
+  display: inline-block;
+}
+.social-link:hover
+{
+  color: var(--text-color);
+  background-color: var(--primary);
+}
+.social-link
+{
+  color: var(--text-color);
+  display: inline-block;
+  background-color: var(--light-text);
+  width: 21px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+
+/* LINK-FOOTER End Here */
+
+
+
+
+
 /* FOOTER Start Here */
 footer
 {
-  background-color: var(--text-color);
+  background-color:var(--light-gray);
 }
 .footer-text
 {
@@ -755,6 +856,7 @@ footer
 }
 .footer-text p{
   margin: 0;
+  font-size: 12px;
 }
 .copyright
 {
