@@ -817,6 +817,7 @@ input[type="button"] {
 .social-item
 {
   display: inline-block;
+  margin: 5px;
 }
 .social-link:hover
 {
