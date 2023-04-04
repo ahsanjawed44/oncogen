@@ -402,6 +402,7 @@ height: auto;
   -webkit-text-stroke: 11px;
   letter-spacing: 10px;
   line-height: 1;
+  font-size: 8vw;
   color: var(--light-text);
   opacity: 0.5;
   text-align: center;
@@ -874,7 +875,158 @@ footer
 }
 /* FOOTER End Here */
 
-  @media screen and (max-height: 450px) {
+
+
+
+/*Small Laptops*/
+@media screen and (max-width:992px) and (min-width:768px)
+{}
+
+/*Tablet Devices*/
+@media screen and (max-width:767px) and (min-width:520px)
+{
+}
+
+/*Mobile Devices*/
+@media screen and (max-width:519px) and (min-width:320px) { 
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+
+    h1 {
+      font-weight: 900;
+      font-size: 8vh;
+  }
+    h2 {
+      font-weight: 700;
+      font-size: 56px;}
+
+    .hero-content ,.hero-btn {
+      margin-left: 15px!important;}
+  
+      .service-card {
+        margin: 50px 0;
+        display: block;
+    }
+    .card-img img {
+      width: 375px;
+      height: auto;
+  }
+  .img-box {
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary);
+    z-index: -1;
+    position: absolute;
+    bottom: -14px;
+    left: -7px;}
+
+    .img-box-reverse {
+      width: 250px;
+      height: 250px;
+      background-color: var(--primary);
+      z-index: -1;
+      position: absolute;
+      bottom: -14px;
+      right: -7px;}
+
+      #reverse .text {
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+    .text {
+      margin-left: 20px;
+      margin-top: 20px;
+  }
+  .card-body a {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: auto;
+}
+
+#reverse a {
+  right: 0;
+  left: auto;
+}
+.roadmap {
+  display: flex;
+  flex-direction: column;
+}
+.rm-card {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.title {
+  margin-right: 10px;}
+
+  .step {
+    position: absolute;
+    right: 1px;
+}
+.roadmap img {
+  margin: 15px 10px;
+}
+#roadmap h1 {
+  -webkit-text-stroke: 5px;
+  letter-spacing: 6px;
+  font-size: 8vw;
+  margin-top: 20px;
+  color: var(--light-text);
+  opacity: 0.5;
+  text-align: center;
+}
+.research-body {
+  z-index: 1;
+  position: absolute;
+  padding: 50px 0;
+  margin: 50px 0;
+  max-width: 80%;
+}
+span.dots 
+{
+  display: none;
+}
+
+.brochure-card {
+  background-color: var(--w);
+  display: flex;
+  flex-direction: column;
+}
+.twitter h1 {
+  font-size: 100px;
+}
+  .twitter> p {
+    max-width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.frame-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.frame-card-text h3 {
+  font-size: 43px;}
+
+  .link-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 5px;
+}
+
+.f-link a {
+  margin-right: 5px;
+  text-transform: none;
+  font-size: 5px;
+}
   }
