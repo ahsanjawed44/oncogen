@@ -898,17 +898,25 @@ footer
   }
     h2 {
       font-weight: 700;
-      font-size: 56px;}
+    font-size: 12vw;}
 
     .hero-content ,.hero-btn {
-      margin-left: 15px!important;}
+      margin-left: 15px;
+      margin-top: 20px;}
   
+      #company {
+        background-color: #ebebeb;
+        height: 427px;
+    }
+    #service {
+      padding: 10px 0;
+  }
       .service-card {
         margin: 50px 0;
         display: block;
     }
     .card-img img {
-      width: 375px;
+      width: 350px;
       height: auto;
   }
   .img-box {
@@ -918,7 +926,7 @@ footer
     z-index: -1;
     position: absolute;
     bottom: -14px;
-    left: -7px;}
+    left: -5px;}
 
     .img-box-reverse {
       width: 250px;
@@ -942,34 +950,53 @@ footer
     position: absolute;
     bottom: 0px;
     right: 0px;
+    bottom: -20px;
     left: auto;
 }
 
 #reverse a {
   right: 0;
+  bottom: -20px;
   left: auto;
+}
+#roadmap {
+  padding: 26px;
+  margin: 0px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .roadmap {
   display: flex;
   flex-direction: column;
+}
+
+.card-body p {
+    margin: 12px 0;
+    word-spacing: 2px;
 }
 .rm-card {
   display: flex;
   margin-bottom: 10px;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   position: relative;
 }
-.title {
-  margin-right: 10px;}
 
-  .step {
-    position: absolute;
-    right: 1px;
+.title {
+  background-size: 119px;
+  height: 51px;
+  width: 123px;
+  margin-right: 12px;
 }
+
 .roadmap img {
-  margin: 15px 10px;
+  margin: 15px 0px 15px 6px;
+  width: 45px;
 }
+.title p {
+  font-size: 8px;}
 #roadmap h1 {
   -webkit-text-stroke: 5px;
   letter-spacing: 6px;
@@ -982,7 +1009,7 @@ footer
 .research-body {
   z-index: 1;
   position: absolute;
-  padding: 50px 0;
+  padding: 0;
   margin: 50px 0;
   max-width: 80%;
 }
@@ -996,8 +1023,10 @@ span.dots
   display: flex;
   flex-direction: column;
 }
+.white-body-text {
+  margin: 20px 20px;}
 .twitter h1 {
-  font-size: 100px;
+  font-size: 70px;
 }
   .twitter> p {
     max-width: 100%;
@@ -1010,7 +1039,7 @@ span.dots
   flex-direction: column;
 }
 .frame-card-text h3 {
-  font-size: 43px;}
+  font-size: 36px;}
 
   .link-footer {
     display: flex;
@@ -1018,12 +1047,24 @@ span.dots
     justify-content: space-between;
     align-items: start;
 }
+.research-body p {
+  color: var(--w);
+  font-weight: 400;
+  margin: 8px 0 30px;
+  font-size: 12px;
+}
 
 .footer-text p {
   margin: 0;
   font-size: 5px;
 }
-
+.brochure-head {
+  color: var(--w);
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 24px;
+}
 .f-link a {
   margin-right: 5px;
   text-transform: none;
