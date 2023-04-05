@@ -63,6 +63,10 @@ body {
     letter-spacing: .5px;
     z-index: 1;
 }
+.custom-btn:hover
+{
+  color: var(--w);
+}
 
 .custom-btn2 {
   cursor: pointer;
@@ -880,11 +884,200 @@ footer
 
 /*Small Laptops*/
 @media screen and (max-width:992px) and (min-width:768px)
-{}
+{
+  
+}
 
 /*Tablet Devices*/
 @media screen and (max-width:767px) and (min-width:520px)
 {
+  h1 {
+    font-weight: 900;
+    font-size: 8vh;
+}
+  h2 {
+    font-weight: 700;
+  font-size: 12vw;}
+
+  .hero-content ,.hero-btn {
+    margin-left: 15px;
+    margin-top: 20px;}
+
+    #company {
+      height: 321px;
+  }
+  #service {
+    padding: 10px 0;
+}
+    .service-card {
+      margin: 50px 0;
+      display: block;
+  }
+  .img-box {
+    bottom: -14px;
+    left: 50px;
+}
+.company-span img
+{
+  width: 8vw;
+}
+.company-span {
+  left: 17px;
+  top: 29px;
+}
+
+.img-box-reverse {
+    bottom: -14px;
+    right: 50px;
+}
+
+    #reverse .text {
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-left: auto;
+  }
+  .text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.card-body a {
+  right: 24px;
+  bottom: -20px;
+  left: auto;
+}
+
+#reverse a {
+    bottom: -30px;
+    right: 22px;
+}
+#roadmap {
+padding: 26px;
+margin: 0px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.roadmap {
+display: flex;
+flex-direction: column;
+}
+
+.card-body p {
+  margin: 12px 0;
+  word-spacing: 2px;
+}
+.rm-card {
+display: flex;
+margin-bottom: 10px;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+position: relative;
+}
+
+.title {
+  background-size: 172px;
+  height: 66px;
+  width: 174px;
+  margin-right: 0px;
+}
+.orange-body-text h1 {
+  line-height: .8;
+  text-align: left;
+  font-size: 25vw;
+  opacity: .4;
+  padding: 30px 0;
+}
+.roadmap img {
+margin: 15px 0px 15px 6px;
+width: 70px;
+}
+.title p {
+font-size: 12px;}
+
+#roadmap h1 {
+  -webkit-text-stroke: 5px;
+  letter-spacing: 6px;
+  font-size: 9.6vw;
+  margin-top: 20px;
+}
+.research-body {
+z-index: 1;
+position: absolute;
+padding: 0;
+margin: 50px 0;
+max-width: 80%;
+}
+span.dots 
+{
+display: none;
+}
+
+.brochure-card {
+background-color: var(--w);
+display: flex;
+flex-direction: column;
+}
+.white-body-text {
+margin: 20px 20px;}
+.twitter h1 {
+  font-size: 25vw;
+}
+.twitter> p {
+  max-width: 100%;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.frame-card {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+.content-head {
+  color: var(--light-text);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+input[type="email"] {
+  font-size: 14px;
+}
+.content-body p {
+  font-size: 13px;
+}
+input[type="button"] {
+  right: auto;
+  left: 130px;
+  font-size: 14px;
+}
+.list-link {
+  color: var(--light-text);
+  font-size: 12px;
+  text-transform: none;
+}
+.link-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.research-body p {
+  color: var(--w);
+  font-weight: 400;
+  margin: 8px 0 30px;
+  max-width: 80%;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.f-link a {
+  margin-right: 5px;
+  text-transform: none;
+  font-size: 10px;
+}
 }
 
 /*Mobile Devices*/
